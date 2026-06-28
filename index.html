@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouthWave Malaysia | Pertubuhan Gelombang Muda Malaysia</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Pertubuhan Gelombang Muda Malaysia (YouthWave). Empowering individuals from vulnerable communities with tools, skills, and opportunities to generate sustainable side incomes.">
+  <meta name="keywords" content="YouthWave, PGMM, Pertubuhan Gelombang Muda Malaysia, Youth NGO, Malaysia, Youth Empowerment, Kuala Lumpur">
+  
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- HERO SECTION -->
+  <header class="hero" id="home">
+    <div class="nav-container">
+      <div class="logo">
+        <img src="logo.jpg" alt="YouthWave PGMM Logo" class="logo-img">
+      </div>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#what-we-do">What We Do</a>
+        <a href="#latest-updates">Updates</a>
+        <a href="#find-us">Location</a>
+      </nav>
+      <a href="#get-involved" class="cta-nav">Get Involved</a>
+    </div>
+
+    <div class="hero-content">
+      <h1 class="fade-in">Malaysian Youths Fighting for Change!</h1>
+      <p class="tagline fade-in delay-1">#YourVoiceMatters &mdash; Building Resilient Youth</p>
+      <div class="hero-actions fade-in delay-2">
+        <a href="#get-involved" class="btn btn-primary">Join the Movement</a>
+      </div>
+    </div>
+    
+    <!-- Geometric Angular Cut -->
+    <div class="hero-angle"></div>
+  </header>
+
+  <!-- ABOUT SECTION -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text fade-in-up">
+          <h2 class="section-title">Who We Are</h2>
+          <p><strong>Pertubuhan Gelombang Muda Malaysia</strong>, famously known as <strong>YouthWave Malaysia</strong>, was founded on April 11, 2020, by Ms. Lilitha Govindasamy.</p>
+          <p>We are a dedicated youth NGO based in Kuala Lumpur, representing the voices of young people on current national issues and fighting for remarkable changes in our society.</p>
+        </div>
+        <div class="about-vision-mission fade-in-up delay-1">
+          <div class="vm-card">
+            <div class="vm-icon">💡</div>
+            <h3>Our Vision</h3>
+            <p>To empower individuals, particularly from vulnerable or underserved communities, by helping them generate additional sources of income outside of their primary employment or livelihood.</p>
+          </div>
+          <div class="vm-card">
+            <div class="vm-icon">🚀</div>
+            <h3>Our Mission</h3>
+            <p>To improve financial stability and quality of life by providing the tools, skills, and opportunities needed to create sustainable side incomes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="about-angle-bottom"></div>
+  </section>
+
+  <!-- WHAT WE DO SECTION -->
+  <section class="services section" id="what-we-do">
+    <div class="container">
+      <div class="section-header fade-in-up">
+        <h2 class="section-title">What We Do</h2>
+        <p class="section-subtitle">Driving change through actionable initiatives.</p>
+      </div>
+      
+      <div class="services-grid">
+        <div class="service-card angular-top fade-in-up delay-1">
+          <div class="service-icon">🤝</div>
+          <h3>Empower Youth</h3>
+          <p>We provide a platform for Malaysian youths to voice their perspectives on critical national issues and advocate for meaningful social change.</p>
+        </div>
+        <div class="service-card angular-top fade-in-up delay-2">
+          <div class="service-icon">📈</div>
+          <h3>Build Skills</h3>
+          <p>From resume mastery to entrepreneurship workshops, we equip young people with the practical skills needed to thrive in the modern economy.</p>
+        </div>
+        <div class="service-card angular-top fade-in-up delay-3">
+          <div class="service-icon">💼</div>
+          <h3>Create Opportunities</h3>
+          <p>We connect youths with resources to generate sustainable side incomes, ensuring financial stability and a better quality of life.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LATEST UPDATES CAROUSEL SECTION -->
+  <section class="latest-updates section" id="latest-updates">
+    <div class="container">
+      <div class="section-header fade-in-up">
+        <h2 class="section-title">Latest Updates</h2>
+        <p class="section-subtitle">See what we've been up to recently.</p>
+      </div>
+
+      <div class="carousel-container fade-in-up delay-1">
+        <div class="carousel-track" id="carousel">
+          <a href="https://www.facebook.com/share/p/19BmCvcYDX/" target="_blank" class="carousel-slide">
+            <img src="images/posts/post1.jpg" alt="Putra Heights fire relief volunteers">
+            <div class="slide-caption">Community Aid Delivery</div>
+          </a>
+          <a href="https://www.facebook.com/share/p/18tGJ51Jhp/" target="_blank" class="carousel-slide">
+            <img src="images/posts/post2.jpg" alt="Fundraising poster">
+            <div class="slide-caption">Disaster Relief Fundraising</div>
+          </a>
+          <a href="https://www.facebook.com/share/p/1BWoUBiM8b/" target="_blank" class="carousel-slide">
+            <img src="images/posts/post3.jpg" alt="Open Recruitment">
+            <div class="slide-caption">Open Recruitment</div>
+          </a>
+          <a href="https://www.facebook.com/share/p/1Hfe6BSoUf/" target="_blank" class="carousel-slide">
+            <img src="images/posts/post4.jpg" alt="PGMM Logo">
+            <div class="slide-caption">YouthWave Movement</div>
+          </a>
+          <a href="https://www.facebook.com/share/p/1VykeLuPN3/" target="_blank" class="carousel-slide">
+            <img src="images/posts/post5.jpg" alt="Resume Mastery Event">
+            <div class="slide-caption">Resume Mastery Workshop</div>
+          </a>
+        </div>
+        <div class="carousel-nav">
+          <button id="prevBtn" class="carousel-btn">&larr;</button>
+          <button id="nextBtn" class="carousel-btn">&rarr;</button>
+        </div>
+      </div>
+      
+      <div class="text-center" style="margin-top: 2rem;">
+        <a href="https://www.facebook.com/youthwaveMY" target="_blank" class="btn btn-outline-sky">Follow us on Facebook</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- GET INVOLVED SECTION -->
+  <section class="get-involved section" id="get-involved">
+    <div class="container">
+      <div class="section-header fade-in-up" style="text-align: center;">
+        <h2 class="section-title" style="color: var(--clr-navy);">Ready to take charge?</h2>
+        <p class="section-subtitle" style="color: var(--clr-navy-light);">Whether you're aiming to build your skills or give back, this is your chance.</p>
+      </div>
+      
+      <div class="get-involved-feature fade-in-up delay-1">
+        <h3>Be the Voice of Malaysian Youth.</h3>
+        <p>Join as a volunteer to build your skills, voice your ideas, and help create positive change in our communities.</p>
+        <a href="https://wa.me/60147592903?text=Hi%20YouthWave%20Malaysia!%20I%20am%20reaching%20out%20from%20your%20website...%" target="_blank" class="btn btn-whatsapp">Join as a Volunteer</a>
+      </div>
+      
+      <div class="get-involved-secondary">
+        <!-- Partner Block -->
+        <div class="secondary-block fade-in-up delay-2">
+          <h4>Partner With Us</h4>
+          <p>Collaborate with us to empower vulnerable groups. We are always open to impactful partnerships.</p>
+          <a href="mailto:youthwaveofficial@gmail.com?subject=Partnership%20Inquiry" class="btn btn-navy" style="width: 100%;">Email Us</a>
+        </div>
+        
+        <!-- Support Block -->
+        <div class="secondary-block fade-in-up delay-3">
+          <h4>Support Our Cause</h4>
+          <p>Your contributions help us fund disaster relief efforts and youth development programs.</p>
+          <div class="donation-text">
+            <strong>Maybank</strong> <span class="account-number">514123692964</span>
+            <small style="display: block; font-size: 0.85rem; color: #718096; margin-top: 0.5rem;">Registered Name for Verification:<br><strong>Pertubuhan Gelombang Muda Malaysia</strong></small>
+          </div>
+          <a href="https://www.maybank2u.com.my/" target="_blank" class="btn btn-outline" style="border-color: var(--clr-navy); color: var(--clr-navy); width: 100%;">Donate via Maybank2u</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FIND US (MAPS) SECTION -->
+  <section class="location section" id="find-us">
+    <div class="container">
+      <div class="section-header fade-in-up">
+        <h2 class="section-title">Find Us</h2>
+        <p class="section-subtitle">Based in the heart of Kuala Lumpur.</p>
+      </div>
+      
+      <div class="map-container fade-in-up delay-1">
+        <div id="map"></div>
+        <button id="recenter-btn" class="recenter-btn" aria-label="Recenter Map">
+          <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
+        </button>
+        <div class="contact-info-card angular-top">
+          <h3>Contact Info</h3>
+          <div class="contact-line">
+            <span class="contact-label"><svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: text-bottom;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> WhatsApp:</span> 
+            <span class="contact-detail"><a href="https://wa.me/60147592903?text=Hi%20YouthWave%20Malaysia!%20I%20am%20reaching%20out%20from%20your%20website..." target="_blank">+60 14-759 2903</a></span>
+          </div>
+          <div class="contact-line">
+            <span class="contact-label"><svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: text-bottom;"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg> Email:</span> 
+            <span class="contact-detail"><a href="mailto:youthwaveofficial@gmail.com">youthwaveofficial@gmail.com</a></span>
+          </div>
+          <div class="contact-line">
+            <span class="contact-label"><svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: text-bottom;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Location:</span> 
+            <span class="contact-detail">Kuala Lumpur, Malaysia</span>
+          </div>
+          <div class="social-links">
+            <a href="https://www.facebook.com/youthwaveMY/" target="_blank" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg> Facebook
+            </a>
+            <a href="https://my.linkedin.com/company/pertubuhan-gelombang-muda-malaysia-youthwave" target="_blank" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg> LinkedIn
+            </a>
+            <a href="https://www.instagram.com/youth.wave/" target="_blank" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg> Instagram
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h3>YouthWave MY</h3>
+          <p>Building Resilient Youth</p>
+        </div>
+        <div class="footer-links">
+          <p>Built by <a href="https://buildforpublic.com" target="_blank">Build for Public</a> &mdash; open tech for the public good.</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Pertubuhan Gelombang Muda Malaysia (PGMM). All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+  <!-- Interactivity Script -->
+  <script>
+    // Map Initialization
+    const klCoords = [3.1390, 101.6869];
+    const map = L.map('map', { zoomControl: false }).setView(klCoords, 12);
+    
+    // Add OpenStreetMap tiles
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+    
+    // Add Zoom control to bottom right
+    L.control.zoom({ position: 'bottomright' }).addTo(map);
+
+    // Add marker
+    const marker = L.marker(klCoords).addTo(map)
+      .bindPopup('<b>Pertubuhan Gelombang Muda Malaysia</b><br>Kuala Lumpur, Malaysia');
+
+    // Recenter button logic
+    document.getElementById('recenter-btn').addEventListener('click', () => {
+      map.flyTo(klCoords, 12);
+      marker.openPopup();
+    });
+
+    // Fix map rendering issue when unhidden/loaded
+    setTimeout(() => { map.invalidateSize(); }, 500);
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // Intersection Observer for scroll animations
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-in, .fade-in-up').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Carousel logic
+    const track = document.getElementById('carousel');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    
+    if(track && prevBtn && nextBtn) {
+      const scrollAmount = 320; // width of card + gap
+      
+      nextBtn.addEventListener('click', () => {
+        if (track.scrollLeft + track.clientWidth >= track.scrollWidth - 10) {
+          track.scrollTo({ left: 0, behavior: 'smooth' });
+        } else {
+          track.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+        }
+      });
+      
+      prevBtn.addEventListener('click', () => {
+        track.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+      });
+
+      // Auto-scroll every 4 seconds
+      setInterval(() => {
+        // If at the end, jump back to start, else scroll right
+        if (track.scrollLeft + track.clientWidth >= track.scrollWidth - 10) {
+          track.scrollTo({ left: 0, behavior: 'smooth' });
+        } else {
+          track.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+        }
+      }, 4000);
+    }
+  </script>
+</body>
+</html>

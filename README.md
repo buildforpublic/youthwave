@@ -7,10 +7,12 @@ Part of [Build for Public](https://buildforpublic.com) — open tech for the pub
 
 ---
 
-## Status: open for a builder
+## Status: v1 Built!
 
-There's **no brief, brand, or page spec yet**. If you're picking this up, the
-first job is to **scope it**:
+The initial landing page has been built. It uses vanilla HTML/CSS/JS with no build step.
+
+To view the site:
+1. Simply open `index.html` in your web browser.
 
 1. Research the org from their socials and posts (below) to understand what they
    do and who they serve.
