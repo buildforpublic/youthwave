@@ -408,6 +408,45 @@ We look forward to seeing you there and helping you take your resume to the next
       observer.observe(el);
     });
 
+    // Number Counter Animation
+    const animateValue = (obj, start, end, duration) => {
+      let startTimestamp = null;
+      if (obj._rafId) window.cancelAnimationFrame(obj._rafId);
+      const step = (timestamp) => {
+        if (!startTimestamp) startTimestamp = timestamp;
+        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+        const easeProgress = 1 - Math.pow(1 - progress, 4);
+        const current = Math.floor(easeProgress * (end - start) + start);
+        obj.innerHTML = current.toLocaleString() + '+';
+        if (progress < 1) {
+          obj._rafId = window.requestAnimationFrame(step);
+        }
+      };
+      obj._rafId = window.requestAnimationFrame(step);
+    };
+
+    const counterObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const target = parseInt(entry.target.getAttribute('data-target'), 10);
+          if (!isNaN(target)) {
+            animateValue(entry.target, 0, target, 2000);
+            observer.unobserve(entry.target);
+          }
+        }
+      });
+    }, { threshold: 0.5 });
+
+    document.querySelectorAll('.stat-number').forEach(el => {
+      const text = el.textContent;
+      const numStr = text.replace(/[^0-9]/g, '');
+      if (numStr) {
+        el.setAttribute('data-target', numStr);
+        el.textContent = '0+';
+        counterObserver.observe(el);
+      }
+    });
+
     // Carousel logic
     const track = document.getElementById('carousel');
     const prevBtn = document.getElementById('prevBtn');
