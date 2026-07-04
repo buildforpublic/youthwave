@@ -90,7 +90,7 @@ img {
 }
 
 .contact-info-card {
-  position: static;
+  position: relative;
   background-color: var(--clr-navy-light);
   color: var(--clr-white);
   padding: 2.5rem 2rem 2rem;
@@ -499,6 +499,11 @@ img {
   overflow: hidden;
   display: block;
   cursor: pointer;
+}
+
+.carousel-slide:focus {
+  outline: 2px solid var(--clr-sky);
+  outline-offset: 4px;
 }
 
 .carousel-slide img {

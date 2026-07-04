@@ -31,11 +31,7 @@ youthwave/
 2. **VS Code:** Install "Live Server" extension, right-click `index.html` → "Open with Live Server" (recommended for hot reload).
 3. **Python Server:** Run `python -m http.server` in terminal, then open `http://localhost:8000`.
 
-1. Research the org from their socials and posts (below) to understand what they
-   do and who they serve.
-2. Propose how technology could help, e.g. a website, member/event tools, or
-   content.
-3. Reach out via their socials to confirm the need before building.
+
 
 Keep it **open and built in public**: free, open-source, built together.
 
@@ -96,6 +92,13 @@ The site uses photos from Facebook posts. Questions:
 - Do you have higher-resolution versions?
 - Any new events or programs to feature?
 - Are the captions and descriptions accurate?
+
+### 6. HQ Location Coordinates
+- [ ] **Status:** ⏳ Waiting on YouthWave
+
+The map marker and "Get Directions" link were updated to point to coordinates `3.151696, 101.694237` (retrieved from LinkedIn).
+
+**Action needed:** Confirm if this is the exact correct HQ location for YouthWaveMY.
 
 ---
 
